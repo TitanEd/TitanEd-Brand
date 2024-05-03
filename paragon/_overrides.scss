@@ -1,10 +1,126 @@
 // This file is included after all of Bootstrap. Any customization that can't
 // be made using variable definitions should be done here.
 
-@import url('https://titaned-files.s3.ap-south-1.amazonaws.com/assets/custom_dev.css');
-
 //Authn page layout
 .layout{
     background: rgb(233,104,40);
     background: linear-gradient(90deg, rgba(233,104,40,1) 0%, rgba(255,255,255,1) 50%);
+}
+
+.pgn__card-header .pgn__card-header-actions .btn-brand {background-color: #20AD96;border-color: #20AD96;box-shadow: none;color: #fff;}
+.btn-outline-primary{border-color: #20AD96!important; color: #20AD96 !important;}
+.btn-outline-primary:hover, .btn-outline-primary:focus,
+.btn-icon.btn-icon-primary.active, .btn-icon.btn-icon-primary.hover, .btn-icon.btn-icon-primary:active, .btn-icon.btn-icon-primary:hover{border-color: #20AD96 !important; background: #20AD96!important; color: #fff !important;}
+.learning-header .align-items-center{padding-top: 15px !important;padding-bottom: 15px !important;}
+#root header .logo{height: auto !important;}
+#root header .logo img{width: 53%;padding-left: 15px; height: auto;}
+#root .pgn__hyperlink .logo{padding: 0; margin: 0; width: 150px;}
+#courseHome-outline a, #courseHome-dates a, a.text-primary, a.text-primary-500,
+ul li a, .btn-icon.btn-icon-primary, .btn-link,
+ol.treeview-handoutsnav li a, .collapsible-card-lg .collapsible-trigger span,
+.xmodule_display.xmodule_VideoBlock .video .wrapper-downloads .wrapper-download-transcripts .list-download-transcripts .transcript-option,
+.xmodule_display.xmodule_VideoBlock .video .subtitles .subtitles-menu li span{color: #20AD96 !important;}
+.nav-underline-tabs .nav-link.active, .nav-underline-tabs .nav-link:focus, .nav-underline-tabs .nav-link:hover{color: #20AD96 !important;border-bottom-color: #20AD96 !important;}
+.pgn__card-header .pgn__card-header-actions .btn-brand:hover,
+.pgn__card-header .pgn__card-header-actions .btn-brand:focus{background: #3F3A64;border-color: #3F3A64;}
+.site-header-desktop{height: auto !important;}
+.nav-button-group .nav-link.active, .nav-button-group .show>.nav-link,
+.btn-brand, .btn-primary, .tox-dialog__footer-end .tox-button{background-color: #20AD96 !important;border-color: #20AD96 !important;color: #fff !important;}
+.btn-link, .pgn__hyperlink, .alert .alert-message-content a{color: #20AD96 !important;}
+.profile-page .profile-page-bg-banner{background-color: #20AD96 !important;}
+.site-header-desktop .main-nav .expanded .nav-link, .site-header-desktop .main-nav .nav-link.active, .site-header-desktop .main-nav .nav-link:focus, .site-header-desktop .main-nav .nav-link:hover{background: none !important;color: #20AD96 !important;}
+.extra-large-screen-top-stripe, #root .layout .col-md-3.bg-white{display: none !important;}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{color: #20AD96 !important; border-bottom-color: #20AD96 !important;}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{background: none !important}
+#root .layout .content {background: #fff;display: block;margin: 0;padding: 20px;position: relative;z-index: 1;}
+#root .layout .bg-primary-400 {
+    background: none !important;
+    display: block;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+#root .layout .bg-primary-400 h1 {
+    color: #15376d !important;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0 auto !important;
+    max-width: 564px !important;
+    padding: 50px 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+#root .layout .bg-primary-400 .min-vh-100 {
+    display: flex !important;
+    min-height: calc(100vh - 100px) !important;
+}
+#root .layout .bg-primary-400 h1 .text-accent-a {
+    color: #20AD96 !important;
+    display: block !important;
+    font-size: 34px;
+    font-weight: 400;
+    font-weight: 900;
+    line-height: 40px;
+}
+#root .layout {
+    background: #f2f7f8;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+}
+[dir=ltr] #root .layout:before {
+    /* box-shadow: 400px 400px 143px 90px #97edc073; */
+    -webkit-box-shadow: 400px 400px 143px 90px #97edc073;
+    -moz-box-shadow: 400px 400px 143px 90px #97edc073;
+    left: auto;
+    right: 400px;
+}
+#root .layout:before {
+    bottom: auto;
+    top: -400px;
+}
+#root header a.logo{
+    display: block;
+    width: 172px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 1rem;
+}
+#root header a.logo img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.page__account-settings #site-preferences{display: none;}
+@media (min-width: 576px){
+    #root .layout .content {
+        padding: 50px;
+        border-radius: 50px 0;
+    }
+    #root .layout .bg-primary-400 h1 {
+        font-size: 52px;
+        line-height: 78px;
+    }
+    #root .layout .bg-primary-400 h1 .text-accent-a {
+        font-size: 64px;
+        line-height: 74px;
+    }
+    #root .layout {
+        padding: 50px;
+    }
+    #root .layout:after, #root .layout:before {
+        border-radius: 50%;
+        bottom: -400px;
+        content: "";
+        display: none;
+        height: 400px;
+        position: absolute;
+        width: 400px;
+    }
+    #root .layout:after, #root .layout:before {
+        display: block;
+    }
 }
